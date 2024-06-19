@@ -1,10 +1,30 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../Provider/AuthProvider';
 
 const Login = () => {
+  const {user, setUser, logInWithPassword} = useContext(AuthContext);
+
+  const navigation = useNavigate()
+
+  const handleFormSubmission = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    logInWithPassword (email, password)
+    .then(result => {
+      console.log(result.user)
+      navigation("/");
+    })
+    .catch(e => {
+      console.log(e.message);
+    })
+  }
+  
   return (
     <div className="w-full md:w-4/5 mx-auto my-16 max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-      <form className="space-y-6" action="#">
+      <form className="space-y-6" onSubmit={handleFormSubmission}>
         <h5 className="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h5>
         <div>
           <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
