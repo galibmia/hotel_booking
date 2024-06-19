@@ -1,0 +1,83 @@
+[
+    {
+      "roomNumber": 101,
+      "type": "Single",
+      "price": 120,
+      "persons": 1,
+      "image": "https://img.freepik.com/free-photo/luxury-classic-modern-bedroom-suite-hotel_105762-1787.jpg?t=st=1718762599~exp=1718766199~hmac=8f352b162168252f06ebd0260a073b0ecf8addb728ce68c16ee892900ca0fb05&w=1380",
+      "description": "A cozy single room with a view of the city."
+    },
+    {
+      "roomNumber": 102,
+      "type": "Double",
+      "price": 150,
+      "persons": 2,
+      "image": "https://img.freepik.com/free-photo/3d-rendering-beautiful-comtemporary-luxury-bedroom-suite-hotel-with-tv_105762-2071.jpg?t=st=1718762618~exp=1718766218~hmac=ea87dc7d0bcc6a4c7a1c5c80bb275aa12da84be48887f29780af5ff289906457&w=1380",
+      "description": "A spacious double room with a view of the beach."
+    },
+    {
+      "roomNumber": 201,
+      "type": "Suite",
+      "price": 300,
+      "persons": 4,
+      "image": "https://img.freepik.com/free-photo/3d-rendering-luxury-bedroom-suite-resort-hotel-with-twin-bed-living_105762-2018.jpg?t=st=1718762633~exp=1718766233~hmac=5e6db77eaf8c467b3434c594545f78091675456a514cf058498666231214144d&w=1380",
+      "description": "A luxurious suite with a mountain view and a fireplace."
+    },
+    {
+      "roomNumber": 202,
+      "type": "Single",
+      "price": 110,
+      "persons": 1,
+      "image": "https://img.freepik.com/free-photo/luxury-classic-modern-bedroom-suite-hotel_105762-1787.jpg?t=st=1718762599~exp=1718766199~hmac=8f352b162168252f06ebd0260a073b0ecf8addb728ce68c16ee892900ca0fb05&w=1380",
+      "description": "A comfortable single room perfect for a solo traveler."
+    },
+    {
+      "roomNumber": 301,
+      "type": "Double",
+      "price": 200,
+      "persons": 2,
+      "image": "https://img.freepik.com/free-photo/3d-rendering-beautiful-comtemporary-luxury-bedroom-suite-hotel-with-tv_105762-2071.jpg?t=st=1718762618~exp=1718766218~hmac=ea87dc7d0bcc6a4c7a1c5c80bb275aa12da84be48887f29780af5ff289906457&w=1380",
+      "description": "A modern double room with a view of the city skyline."
+    },
+    {
+      "roomNumber": 302,
+      "type": "Suite",
+      "price": 350,
+      "persons": 4,
+      "image": "https://img.freepik.com/free-photo/3d-rendering-luxury-bedroom-suite-resort-hotel-with-twin-bed-living_105762-2018.jpg?t=st=1718762633~exp=1718766233~hmac=5e6db77eaf8c467b3434c594545f78091675456a514cf058498666231214144d&w=1380",
+      "description": "A stylish suite with a panoramic view of the city."
+    },
+    {
+      "roomNumber": 401,
+      "type": "Single",
+      "price": 130,
+      "persons": 1,
+      "image": "https://img.freepik.com/free-photo/luxury-classic-modern-bedroom-suite-hotel_105762-1787.jpg?t=st=1718762599~exp=1718766199~hmac=8f352b162168252f06ebd0260a073b0ecf8addb728ce68c16ee892900ca0fb05&w=1380",
+      "description": "A cozy single room with a lakeside view."
+    },
+    {
+      "roomNumber": 402,
+      "type": "Double",
+      "price": 180,
+      "persons": 2,
+      "image": "https://img.freepik.com/free-photo/3d-rendering-beautiful-comtemporary-luxury-bedroom-suite-hotel-with-tv_105762-2071.jpg?t=st=1718762618~exp=1718766218~hmac=ea87dc7d0bcc6a4c7a1c5c80bb275aa12da84be48887f29780af5ff289906457&w=1380",
+      "description": "A comfortable double room with a balcony overlooking the lake."
+    },
+    {
+      "roomNumber": 501,
+      "type": "Suite",
+      "price": 400,
+      "persons": 4,
+      "image": "https://img.freepik.com/free-photo/3d-rendering-luxury-bedroom-suite-resort-hotel-with-twin-bed-living_105762-2018.jpg?t=st=1718762633~exp=1718766233~hmac=5e6db77eaf8c467b3434c594545f78091675456a514cf058498666231214144d&w=1380",
+      "description": "A spacious suite with an ocean view and a private balcony."
+    },
+    {
+      "roomNumber": 502,
+      "type": "Single",
+      "price": 150,
+      "persons": 1,
+      "image": "https://img.freepik.com/free-photo/luxury-classic-modern-bedroom-suite-hotel_105762-1787.jpg?t=st=1718762599~exp=1718766199~hmac=8f352b162168252f06ebd0260a073b0ecf8addb728ce68c16ee892900ca0fb05&w=1380",
+      "description": "A bright single room with a view of the beach."
+    }
+  ]
+  
