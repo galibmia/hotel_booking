@@ -1,11 +1,14 @@
 import React, { useContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
 
 const Login = () => {
   const {user, setUser, logInWithPassword} = useContext(AuthContext);
 
-  const navigation = useNavigate()
+  // Navigate the route
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
 
   const handleFormSubmission = (e) => {
     e.preventDefault();
@@ -14,11 +17,10 @@ const Login = () => {
     const password = form.password.value;
     logInWithPassword (email, password)
     .then(result => {
-      console.log(result.user)
-      navigation("/");
+      navigate(from, {replace: true})
     })
     .catch(e => {
-      console.log(e.message);
+      
     })
   }
   
@@ -61,7 +63,7 @@ const Login = () => {
             </div>
             <label htmlFor="remember" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
           </div>
-          <Link to="/forgot-password" className="ms-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</Link>
+          <Link to="/reset_password" className="ms-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</Link>
         </div>
         <button
           type="submit"

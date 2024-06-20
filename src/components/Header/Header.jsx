@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
+import ActiveLink from '../ActiveLink/ActiveLink';
+import "./Header.css"
 
 const Header = () => {
     const { user, logOut, setError } = useContext(AuthContext);
@@ -20,48 +21,48 @@ const Header = () => {
             <div className="w-full mx-auto">
                 <ul className="flex gap-6 justify-center font-medium p-4 ">
                     <li>
-                        <Link
+                        <ActiveLink
                             to="/"
-                            className="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
+                            className="block py-2 px-3 md:p-0 cus-text-white"
                             aria-current="page"
                         >
                             Home
-                        </Link>
+                        </ActiveLink>
                     </li>
                     <li>
-                        <Link
+                        <ActiveLink
                             to="/booking"
                             className="block py-2 px-3 md:p-0 text-white"
                             aria-current="page"
                         >
                             Booking
-                        </Link>
+                        </ActiveLink>
                     </li>
                     <li>
-                        <Link
+                        <ActiveLink
                             to="/register"
-                            className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                            className="block py-2 px-3 md:p-0  text-white"
                         >
                             Register
-                        </Link>
+                        </ActiveLink>
                     </li>
                     {
                         user ?
                             <li className='flex items-center gap-5'>
-                                <Link
-                                    to="/login"
-                                    className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                <ActiveLink
+                                    to="/profile"
+                                    className="block py-2 px-3 md:p-0  text-white"
                                 >
-                                    {user.email}
-                                </Link> <button className='text-white' onClick={handleSignOut}>Log Out</button>
+                                    Profile
+                                </ActiveLink> <button className='text-white' onClick={handleSignOut}>Log Out</button>
                             </li> :
                             <li>
-                                <Link
+                                <ActiveLink
                                     to="/login"
-                                    className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                    className="block py-2 px-3 md:p-0 text-white"
                                 >
                                     Login
-                                </Link>
+                                </ActiveLink>
                             </li>
                         }
 
